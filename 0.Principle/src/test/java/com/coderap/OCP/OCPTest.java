@@ -21,7 +21,7 @@ public class OCPTest {
 	@Test
 	public void test1() {
 		IClothes tShirt = new TShirt(1, "MUJI T-Shirt", 199d);
-		IClothes coat = new Coat(2, "UNIQLO", 499d);
+		IClothes coat = new Coat(2, "UNIQLO Coat", 499d);
 		System.out.println(tShirt + "，价格：" + tShirt.getPrice());
 		System.out.println(coat + "，价格：" + coat.getPrice());
 	}
@@ -32,7 +32,7 @@ public class OCPTest {
 	@Test
 	public void test2() {
 		IClothes tShirt = new DiscountedTShirt(1, "MUJI T-Shirt", 199d);
-		IClothes coat = new Coat(2, "UNIQLO", 499d);
+		IClothes coat = new Coat(2, "UNIQLO Coat", 499d);
 		System.out.println("无折扣：" + coat + "，价格：" + coat.getPrice());
 		System.out.println("折扣前：" + tShirt + "，价格：" + tShirt.getPrice());
 		DiscountedTShirt discountedTShirt = (DiscountedTShirt) tShirt;
